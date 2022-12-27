@@ -1,5 +1,6 @@
-<template>
+<template><perfect-scrollbar>
   <NavBar />
+  
   <v-app id="home">
     
     <div class="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200"></div>
@@ -33,8 +34,7 @@
       <v-col cols="14" class="relative z-10 text-green mt-32 " id="about">
         <div>
           <div class="relative ml-32 mt-80">
-      <v-img 
-              lazy-src="https://picsum.photos/id/11/10/6"
+      <v-img              
               max-height="150"
               max-width="250"
               :src='kartikimage'>
@@ -213,6 +213,7 @@
     </v-container>
     <FooterViewVue/>
   </v-app>
+</perfect-scrollbar>
 
 </template>
 
@@ -240,8 +241,10 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped>
-
+<style >
+.ps{
+  height: auto;
+}
 /* .v-container{
   padding:16px 0;  
 }
