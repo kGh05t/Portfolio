@@ -47,7 +47,7 @@
                     },
                     particles: {
                         color: {
-                            value: '#38ff3f'
+                            value: '#ff0000'
                         },
                         links: {
                             color: '#f8fc0f',

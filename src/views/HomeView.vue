@@ -37,7 +37,7 @@
               lazy-src="https://picsum.photos/id/11/10/6"
               max-height="150"
               max-width="250"
-              src="https://picsum.photos/id/11/500/300">
+              :src='kartikimage'>
             <template v-slot:placeholder>
                     <div class="d-flex align-center justify-center fill-height">
                       <v-progress-circular
@@ -223,9 +223,14 @@ import { defineComponent } from 'vue';
 import NavBar from '@/components/NavBar.vue'
 import particlesViewVue from '@/components/particlesView.vue'
 import FooterViewVue from '@/components/FooterView.vue';
+import kartikimage from '../assets/images/kartik.png'
 export default defineComponent({
   name: 'HomeView',
-
+  data(){
+      return{
+        kartikimage:kartikimage
+      }
+  },
   components: {
     
     NavBar,
